@@ -9,17 +9,17 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="relative z-20 mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
+    <header className="relative z-20 mx-auto flex w-full max-w-[1440px] items-center justify-between px-5 py-6 sm:px-8">
       <a href="#home" aria-label="OffersBox home">
         <Logo variant="light" />
       </a>
 
-      <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
+      <nav className="hidden items-center gap-9 lg:flex" aria-label="Primary">
         {navLinks.map((link) => (
           <a
             key={link.label}
             href={link.href}
-            className="text-sm font-medium text-white/85 transition-colors hover:text-white"
+            className="text-base font-medium text-white/85 transition-colors hover:text-white"
           >
             {link.label}
           </a>
@@ -29,10 +29,10 @@ export function SiteHeader() {
       <div className="flex items-center gap-3">
         <a
           href="#deals"
-          className="hidden items-center gap-2 rounded-full gradient-orange px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-orange-500/25 transition-transform hover:scale-[1.03] sm:inline-flex"
+          className="hidden items-center gap-2 rounded-full gradient-orange px-6 py-3 text-base font-semibold text-white shadow-lg shadow-orange-500/25 transition-transform hover:scale-[1.03] sm:inline-flex"
         >
           Explore Offers
-          <ArrowRight className="h-4 w-4" />
+          <ArrowRight className="h-5 w-5" />
         </a>
         <button
           type="button"
