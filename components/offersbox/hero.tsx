@@ -13,51 +13,51 @@ export function Hero() {
     <section id="home" className="hero-navy relative overflow-hidden">
       <SiteHeader />
 
-      <div className="mx-auto grid w-full max-w-7xl items-center gap-10 px-5 pb-16 pt-6 sm:px-8 lg:grid-cols-2 lg:gap-6 lg:pb-24 lg:pt-10">
-        <div className="max-w-xl">
-          <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-white/90">
+      <div className="mx-auto grid w-full max-w-[1440px] items-center gap-10 px-5 pb-16 pt-6 sm:px-8 lg:grid-cols-2 lg:gap-6 lg:pb-28 lg:pt-12">
+        <div className="max-w-xl xl:max-w-2xl">
+          <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white/90">
             Same Brands. Bigger Savings.
           </span>
 
-          <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-5xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
             Your Everyday
             <br />
             <span className="text-gradient-orange">Savings Partner</span>
           </h1>
 
-          <p className="mt-5 max-w-md text-base leading-relaxed text-white/75 sm:text-lg">
+          <p className="mt-6 max-w-md text-lg leading-relaxed text-white/75 xl:max-w-lg xl:text-xl">
             Curated deals, verified offers and exclusive discounts from your
             favourite brands — all in one place.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
               href="#deals"
-              className="inline-flex items-center gap-2 rounded-full gradient-orange px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-orange-500/30 transition-transform hover:scale-[1.03]"
+              className="inline-flex items-center gap-2 rounded-full gradient-orange px-8 py-4 text-base font-semibold text-white shadow-xl shadow-orange-500/30 transition-transform hover:scale-[1.03]"
             >
               Explore Offers
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-5 w-5" />
             </a>
             <a
               href="#how-it-works"
-              className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+              className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-7 py-4 text-base font-semibold text-white transition-colors hover:bg-white/10"
             >
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white">
-                <Play className="h-3 w-3 fill-navy-2 text-navy-2" />
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white">
+                <Play className="h-3.5 w-3.5 fill-navy-2 text-navy-2" />
               </span>
               Watch How It Works
             </a>
           </div>
 
-          <dl className="mt-12 flex flex-wrap gap-x-10 gap-y-6">
+          <dl className="mt-14 flex flex-wrap gap-x-12 gap-y-6">
             {stats.map((s) => (
               <div key={s.title} className="flex items-center gap-3">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white">
-                  <s.icon className="h-5 w-5" />
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white">
+                  <s.icon className="h-6 w-6" />
                 </span>
                 <div>
-                  <dt className="text-sm font-semibold text-white">{s.title}</dt>
-                  <dd className="text-xs text-white/60">{s.desc}</dd>
+                  <dt className="text-base font-semibold text-white">{s.title}</dt>
+                  <dd className="text-sm text-white/60">{s.desc}</dd>
                 </div>
               </div>
             ))}
